@@ -9,13 +9,13 @@
 oldnames = "nobody"
 
 hello <- function(myname = ""){
-  
   if(myname == ""){
     stop("Tell me your name!")
   }
-  list(
-    message = paste("hello", myname, "! Previous names: ", oldnames)
+  result <- list(
+    message = paste("hello", myname, "! Previous name: ", oldnames)
   )
-  oldnames <-- paste(myname, ",", oldnames)
+  oldnames <<- myname
   
+  result
 }
