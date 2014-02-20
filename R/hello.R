@@ -4,11 +4,18 @@
 #' 
 #' @export
 #' @param myname your name. Required.
+#' 
+#' 
+oldnames = "-"
+
 hello <- function(myname = ""){
+  
   if(myname == ""){
     stop("Tell me your name!")
   }
   list(
-    message = paste("hello", myname, "! This is", R.Version()$version.string)
+    message = paste("hello", myname, "! Previous names: ", oldnames)
   )
+  oldnames <-- past(myname, ",", oldnames)
+  
 }
