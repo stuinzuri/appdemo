@@ -16,6 +16,6 @@ hello <- function(myname = ""){
   list(
     message = paste("hello", myname, "! Previous names: ", oldnames)
   )
-  oldnames <-- past(myname, ",", oldnames)
+  oldnames <-- paste(myname, ",", oldnames)
   
 }
