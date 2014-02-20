@@ -6,7 +6,7 @@
 #' @param myname your name. Required.
 #' 
 #' 
-oldnames = "-"
+oldnames = "nobody"
 
 hello <- function(myname = ""){
   
